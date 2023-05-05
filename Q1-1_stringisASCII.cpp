@@ -1,6 +1,10 @@
 /* Is Unique: Implement an algorithm to determine
 if a string has all unique characters. What if you
 cannot use additional data structure? */
+/* time complexity O(n) - size n string, O(1) time complexity for character set 128(fixed)
+space complexity is O(1) -  does not need additinal DS
+over all time and space complexity O(c) for all fixed size character set of size c */
+
 
 #include <stdio.h>
 #include <string>
