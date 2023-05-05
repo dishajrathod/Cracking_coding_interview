@@ -3,6 +3,7 @@ permutation of a palindrome. A palindrome is a word or phrase that
 is the same forwards and backwards. A permutation is a 
 rearrangement of letters. The palindrome doe snot need to be limited
 to just dictionary words.*/
+/* space in command line means they are considered mulitple arguments, have to fix this*/
 /* assuming input string is ASCII */
 /* TC O(n) - n is length of string - gets through the string twice so 2n time
 SC O(c) - c is size of character set*/
