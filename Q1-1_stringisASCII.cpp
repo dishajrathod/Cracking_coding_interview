@@ -31,4 +31,5 @@ void main(int argc, char[] argv)
 {
   
   bool ret = isUnique(str);
+  cout << "String is " << ret ? "" : "not" << " unique";
 }
