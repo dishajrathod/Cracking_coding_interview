@@ -2,7 +2,7 @@
 if a string has all unique characters. What if you
 cannot use additional data structure? */
 /* time complexity O(n) - size n string, O(1) time complexity for character set 128(fixed)
-space complexity is O(1) -  does not need additinal DS
+space complexity is O(1) -  additional DS is only 128 int long(fixed)
 over all time and space complexity O(c) for all fixed size character set of size c */
 
 
