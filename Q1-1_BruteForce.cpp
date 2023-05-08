@@ -3,38 +3,41 @@ character with the other to make sure uniqueness.
 TC is O(n^2) ~ n(n+1)/2
 SC is O(1) */
 
-include <iostream>
-include <string>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-bool isUnique(string str)
+bool isUnique(wstring str)
 {
-  bool ret = true;
-  
-  for(int it = 0; it < str.length(); it++)
-  {
-    for(int jt = it + 1; jt < str.length(); jt++)
-    {
-      if(str[it] == str[jt])
-      {
-       //return as soon as 1st character that is same
-        return false;
-      }
-    }
-  }
-  
-  return ret;
+	bool ret = true;
+
+	for (int it = 0; it < str.length(); it++)
+	{
+		for (int jt = it + 1; jt < str.length(); jt++)
+		{
+			auto f = str.at(it);
+			auto j = str.at(jt);
+			if (str.at(it) == str.at(jt))
+			{
+				//return as soon as 1st character that is same
+				return false;
+			}
+		}
+	}
+
+	return ret;
 }
 
-int main(int argc, char* argv[])
+int wmain(int argc, wchar_t* argv[])
 {
-  if(argc > 1)
-  {
-    string str = argv[1];
-  }
-  
-  bool ret = isUnique(str);
-  cout << "String is" << (ret ? "" : " not ") << "unique"
-  return 0;
+	wstring str;
+	if (argc > 1)
+	{
+		str = argv[1];
+	}
+
+	bool ret = isUnique(str);
+	cout << "String is " << (ret ? "" : "not ") << "unique";
+	return 0;
 }
