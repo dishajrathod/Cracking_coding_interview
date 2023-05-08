@@ -20,7 +20,7 @@ bool isUnique(wstring str)
 			auto j = str.at(jt);
 			if (str.at(it) == str.at(jt))
 			{
-				//return as soon as 1st character that is same
+				//return as soon as 1st match found
 				return false;
 			}
 		}
