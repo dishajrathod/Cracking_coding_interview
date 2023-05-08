@@ -1,6 +1,6 @@
 /* Character set is unfixed(unicode), we may have to compare every single
 character with the other to make sure uniqueness. Real world is often messy 
-and not everyone speaks English so we take our time*/
+and not everyone speaks English so we take our time
 TC is O(n^2) ~ n(n+1)/2
 SC is O(1) */
 
